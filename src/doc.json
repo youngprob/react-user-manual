@@ -1,0 +1,82 @@
+
+
+{
+  "common": [
+     {
+      "slug": "introduction",
+      "title": "Introduction",
+      "content": [
+        "Welcome to the Inventory Reconciliation System user manual.",
+        "This guide will help all users — from Super Admins and Admins to Audit Supervisors, Auditors, and Operators — to understand, manage, and carry out inventory reconciliation tasks smoothly and accurately.",
+        "The system is designed to ensure that your recorded stock data matches your physical inventory, helping your organization maintain transparency, reduce discrepancies, and strengthen compliance with internal and external audit requirements.",
+        "In this manual, you will find:",
+        "- An overview of how the system works",
+        "- Step-by-step instructions for your role-specific tasks",
+        "- Guidelines for managing users, reports, audits, and inventory data",
+        "- Helpful tips for troubleshooting common issues",
+        "We recommend all users start here, then explore the relevant sections for their roles using the sidebar.",
+        "If you face any difficulties, please reach out to your system administrator or the support team."
+      ]
+    },
+    {
+      "slug": "login",
+      "title": "Login",
+      "content": "To login you need to follow the steps below",
+      "sections": [
+              { "heading": "Step 1", "content": "Login with your username and password" , "imageUrl":"Admin/01_ClientsTable.gif" }
+            ]
+    }
+  ],
+  "roles": {
+    "Admin": [
+      {
+        "group": "Admin Tasks",
+        "pages": [
+          {
+            "slug": "manage-users",
+            "title": "Manage Users",
+            "sections": [
+              { "heading": "Step 1", "content": "Open user panel." },
+              { "heading": "Step 2", "content": "Click on the user you want to manage"}
+            ]
+          },
+          {
+            "slug": "view-reports",
+            "title": "View Reports",
+            "sections": [
+              { "heading": "Step 1", "content": "Navigate to reports tab." }
+            ]
+          }
+        ]
+      }
+    ],
+    "Audit Supervisor": [
+      {
+        "group": "Audit",
+        "pages": [
+          {
+            "slug": "audit-inventory",
+            "title": "Audit Inventory",
+            "sections": [
+              { "heading": "Step 1", "content": "Open audit tools." }
+            ]
+          }
+        ]
+      }
+    ],
+    "User": [
+      {
+        "group": "User Tasks",
+        "pages": [
+          {
+            "slug": "update-stock",
+            "title": "Update Stock",
+            "sections": [
+              { "heading": "Step 1", "content": "Open stock page." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
