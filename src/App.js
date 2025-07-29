@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import helpDocs from "./doc.json";
 import "./index.css";
-//import image from "../src/HelpDocsGifs/Admin/01_ClientsTable.gif";
 
 
 export default function App() {
   // Dynamically import all images from /home folder
-  const imageContext = require.context('./HelpDocsGifs', false, /\.(gif|png|jpe?g)$/);
+  const imageContext = require.context('./HelpDocsGifs', true, /\.(gif|png|jpe?g)$/);
 
   // Create a map: "sdf.gif" => image path
   const imageMap = {};
@@ -26,6 +25,10 @@ export default function App() {
   if (selectedRole && helpDocs.roles[selectedRole]) {
     allPages.push(...helpDocs.roles[selectedRole]);
   }
+  // Flatten all pages for sidebar and navigation
+  const sidebarPages = allPages.flatMap(group => group.pages);
+  // Find the index of the currently active page
+  const currentIndex = sidebarPages.findIndex(p => p.slug === activeSlug);
 
   // Find the active doc
   const activeDoc = allPages
@@ -60,11 +63,9 @@ export default function App() {
             {group.pages.map(page => (
               <div
                 key={page.slug}
-                className={`nav-item ${
-                  page.slug === activeSlug ? "active" : ""
-                }`}
-                onClick={() => setActiveSlug(page.slug)}
-              >
+                className={`nav-item ${page.slug === activeSlug ? "active" : ""
+                  }`}
+                onClick={() => setActiveSlug(page.slug)}>
                 {page.title}
               </div>
             ))}
@@ -84,12 +85,34 @@ export default function App() {
           activeDoc.sections.map((section, i) => (
             <div key={i} className="step-card">
               <h2>{section.heading}</h2>
-              <p>{section.content}</p>
-              <p>{section.imageUrl}</p>
-              <img src={imageMap[section.imageUrl]} alt="image" />
-              <img src={section.imageUrl} alt="image" />
+              <p>{section.intro}</p>
+
+              {section.imageUrl && imageMap[section.imageUrl] && (
+                <img
+                  src={imageMap[section.imageUrl]}
+                  className="step-gif"
+                  alt={section.heading}
+                />
+              )}
+
+              {section.details && (
+                <ol className="details-list">
+                  {section.details.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ol>
+              )}
             </div>
+
           ))}
+        <div className="nav-buttons">
+          {currentIndex > 0 && (
+            <button onClick={() => setActiveSlug(sidebarPages[currentIndex - 1].slug)}>Back</button>
+          )}
+          {currentIndex < sidebarPages.length - 1 && (
+            <button onClick={() => setActiveSlug(sidebarPages[currentIndex + 1].slug)}>Next</button>
+          )}
+        </div>
       </main>
     </div>
   );

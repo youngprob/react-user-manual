@@ -1,30 +1,65 @@
-
-
 {
   "common": [
-     {
+    {
       "slug": "introduction",
       "title": "Introduction",
       "content": [
-        "Welcome to the Inventory Reconciliation System user manual.",
-        "This guide will help all users — from Super Admins and Admins to Audit Supervisors, Auditors, and Operators — to understand, manage, and carry out inventory reconciliation tasks smoothly and accurately.",
-        "The system is designed to ensure that your recorded stock data matches your physical inventory, helping your organization maintain transparency, reduce discrepancies, and strengthen compliance with internal and external audit requirements.",
-        "In this manual, you will find:",
-        "- An overview of how the system works",
-        "- Step-by-step instructions for your role-specific tasks",
-        "- Guidelines for managing users, reports, audits, and inventory data",
-        "- Helpful tips for troubleshooting common issues",
-        "We recommend all users start here, then explore the relevant sections for their roles using the sidebar.",
-        "If you face any difficulties, please reach out to your system administrator or the support team."
+        "Welcome to the Inventory Reconciliation System User Manual.",
+        "This guide is crafted to support every user — from Admins and Audit Supervisors to Operators and Auditors — as you work with the Inventory Reconciliation System. Our platform is engineered to make inventory checks accurate, transparent, and compliant with audit requirements.",
+        "With this manual, you will:",
+        "- Gain a clear understanding of system features and workflows.",
+        "- Access concise, role-based instructions for each key task.",
+        "- Find best practices for managing records, user roles, reports, and reconciliations.",
+        "- Get solutions to common challenges and troubleshooting guidance.",
+        "How to use this guide:",
+        "Start with this introduction, then use the navigation sidebar to browse sections relevant to your role. If you have questions or need help, contact your system administrator or the dedicated support team.",
+        "Let’s begin your journey towards more effective, reliable, and streamlined inventory reconciliation."
       ]
     },
     {
       "slug": "login",
       "title": "Login",
-      "content": "To login you need to follow the steps below",
       "sections": [
-              { "heading": "Step 1", "content": "Login with your username and password" , "imageUrl":"Admin/01_ClientsTable.gif" }
-            ]
+        {
+          "heading": "How to Login",
+          "intro": "Follow the video below to know how to login to the system.",
+          "imageUrl": "LoginPage.gif",
+          "details": [
+            "Open your preferred web browser (such as Chrome, Edge, or Firefox).",
+            "Type the website address (URL) provided by your admin into the address bar and press Enter.",
+            "Wait for the login page to load completely.",
+            "Enter your registered email address or username in the 'Email' field.",
+            "Enter your password in the 'Password' field.",
+            "Double-check both fields for any typing errors.",
+            "Click the \"Login\" button to proceed.",
+            "If your credentials are correct, you will be redirected to your dashboard.",
+            "If you see an error message, check your credentials and try again, or use the 'Forgot Password' option."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "forgot-password",
+      "title": " Forgot Password",
+      "sections": [
+        {
+          "heading": "How to recover your password",
+          "intro": "Follow the video below to know how to recover your password if you had forgotten.",
+          "imageUrl": "ForgotPage.gif",
+          "details": [
+            "Open your web browser and go to the login page of the website.",
+            "On the login page, find and click the \"Forgot Password\" link (usually below the password field).",
+            "A password recovery form will appear.",
+            "Enter your registered email address in the provided field.",
+            "Click the \"Reset Password\" button.",
+            "Check your email inbox for a password reset email (also check your spam/junk folder).",
+            "Open the email and click the password reset link.",
+            "Follow the instructions on the password reset page to set a new password.",
+            "Return to the login page.",
+            "Enter your email and new password to log in."
+          ]
+        }
+      ]
     }
   ],
   "roles": {
@@ -33,18 +68,250 @@
         "group": "Admin Tasks",
         "pages": [
           {
-            "slug": "manage-users",
-            "title": "Manage Users",
+            "slug": "admin-panel",
+            "title": "Admin Panel",
             "sections": [
-              { "heading": "Step 1", "content": "Open user panel." },
-              { "heading": "Step 2", "content": "Click on the user you want to manage"}
+              {
+                "heading": "Records",
+                "intro": "Refer to the image below to understand how employee records appear in the system.",
+                "imageUrl": "Admin/AdminPannel/01_records.gif",
+                "details": [
+                  "Log in to the system using your Admin credentials.",
+                  "On the left sidebar, click on the 'Inventory Reconciliation' menu.",
+                  "Click the 'Admin' icon to open the Admin Panel.",
+                  "You will see a list of all employees with their details (name, role, status, etc.).",
+                  "Use the search bar at the top to quickly find a specific employee.",
+                  "To view more details about an employee, click on their name or the 'View' button next to their record."
+                ]
+              },
+              {
+                "heading": "Add Employee",
+                "intro": "To add an Employee , follow the steps given in the following short video",
+                "imageUrl": "Admin/AdminPannel/02_AddEmployee.gif",
+                "details": [
+                  "In the Admin Panel, locate and click the 'Add Employee' button (usually at the top or above the employee list).",
+                  "A form will appear. Enter the employee's full name in the 'Name' field.",
+                  "Enter the employee's email address in the 'Email' field.",
+                  "Choose the appropriate role for the employee from the 'Role' dropdown menu.",
+                  "Fill in any other required details (such as phone number or department, if applicable).",
+                  "Double-check all entered information for accuracy.",
+                  "Click the 'Add Employee' button at the bottom of the form to save the new employee.",
+                  "A confirmation message will appear if the employee was added successfully."
+                ]
+              }
             ]
           },
           {
-            "slug": "view-reports",
-            "title": "View Reports",
+            "slug": "clients-table-admin",
+            "title": "Client Records",
             "sections": [
-              { "heading": "Step 1", "content": "Navigate to reports tab." }
+              {
+                "heading": "How to view Client Records",
+                "intro": "Follow the video below to learn how to navigate Client Records.",
+                "imageUrl": "Admin/01_ClientsTable.gif",
+                "details": [
+                  "On the sidebar, click 'Inventory Reconciliation' to expand the menu.",
+                  "Click on 'Inventory Records' in the submenu to view all client records.",
+                  "You will see a table listing all clients, audits, auditors, cycles, entities, audit dates, locations, SPOC names and contacts, statuses, and actions.",
+                  "Use the search bar at the top of the table to find a specific client or record."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "create-new-inventory-admin",
+            "title": "Create New Inventory",
+            "sections": [
+              {
+                "heading": "How to create a new Inventory",
+                "intro": "Follow the video below to know how to create a new inventory.",
+                "imageUrl": "Admin/02_CreateNewInventory.gif",
+                "details": [
+                  "Click on the 'New Reconciliation' button in the Inventory Reconciliation menu.",
+                  "A form will appear.",
+                  "Select the client from the 'Client Name' dropdown (if the client name is not available in the drop down , register the name in the CRM website).",
+                  "Enter the audit name in the 'Audit Name' field.",
+                  "Choose the audit cycle (e.g., Q1, Q2, etc.) in the 'Cycle' field.",
+                  "Select the date of the audit in the 'Audit Date' field.",
+                  "Enter the location for the audit in the 'Location' field.",
+                  "Enter the Single Point of Contact's name in the Client SPOC Name' field.",
+                  "Enter the contact number or email(if required) in the 'Client SPOC Contact' field.",
+                  "Click the 'Next' button to upload the Audit Record file.",
+                  "Review all entered information for accuracy.",
+                  "Click the 'Create Audit Record' button to save the new inventory.",
+                  "A confirmation message will appear if the inventory was created successfully."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "inventory-records-admin",
+            "title": "Inventory Record Per Client",
+            "sections": [
+              {
+                "heading": "Inventory record per client",
+                "intro": "Refer to the image below to understand how inventory records appear in the system.",
+                "imageUrl": "Admin/03_InventoryRecordsPerClient.gif",
+                "details": [
+                  "In the Inventory Records table, find the client whose audit you want to view.",
+                  "Click on the client's audit row.",
+                  "The inventory records for the selected client's audit will be displayed.",
+                  "Review the details and use the available options to navigate or take further actions."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "start-audit-admin",
+            "title": "How to Start an Audit",
+            "sections": [
+              {
+                "heading": "How to Start an Audit",
+                "intro": "Follow the video below to know how to create a new inventory.",
+                "imageUrl": "Admin/04_StartAudit.gif",
+                "details": [
+                  "Open the Inventory Records page from the sidebar.",
+                  "Find the audit you want to start and click on it to open the details.",
+                  "Look for the 'Start Audit' button (usually at the top or in the actions section).",
+                  "Click the 'Start Audit' button.",
+                  "A confirmation message will appear indicating the audit has started."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "add-phystock-admin",
+            "title": "How to Add Physical Stock",
+            "sections": [
+              {
+                "heading": "How to Add Physical Stock",
+                "intro": "Follow the video below to know how to add Physical Stock",
+                "imageUrl": "Admin/05_AddPhyStock.gif",
+                "details": [
+                  "Ensure the audit is started (see 'How to Start an Audit').",
+                  "In the audit details page, locate the 'Add Physical Stock' button next to the 'Stop Audit' button.",
+                  "Click the 'Add Physical Stock' button.",
+                  "A form will appear. Enter the physical stock details (item code, quantity, location, etc.).",
+                  "Click 'Save and Add Another' if you want to add more items, or just 'Save' if you are done.",
+                  "A confirmation message will appear if the Physical Stock has been added successfully.",
+                  "Repeat the process for each physical stock item.",
+                  "Close the form/tab when you are finished adding all physical stock."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "phy-records-admin",
+            "title": "Physical Stock records",
+            "sections": [
+              {
+                "heading": "Physical Stock Records",
+                "intro": "Refer to the image below to navigate to Physical Stock records in the system.",
+                "imageUrl": "Admin/06_Phy_stock_records.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the relevant audit/client.",
+                  "Click on the 'Physical Stock' (at the top in the toolbar) tab or button to view all physical stock records.",
+                  "Review the list of physical stock entries for accuracy."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "perform-reconciliation-admin",
+            "title": "Perform Reconciliation",
+            "sections": [
+              {
+                "heading": "How to Perform Reconciliation",
+                "intro": "Follow the video below to know how to Perform Reconciliation",
+                "imageUrl": "Admin/07_PerformReconciliation.gif",
+                "details": [
+                  "Open the Inventory Records page and select the audit you want to reconcile.",
+                  "Ensure all physical stock entries have been added.",
+                  "Click on the 'Perform Reconciliation' (at the top in the toolbar) button.",
+                  "Wait for the system to process and display the reconciliation results.",
+                  "Review the results for any discrepancies or issues."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "reports-admin",
+            "title": "Records",
+            "sections": [
+              {
+                "heading": "How to see the records?",
+                "intro": "Follow the video below to know how to see the reports",
+                "imageUrl": "Admin/08_Reports.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the audit/client you want to view reports for.",
+                  "Click on the 'Reports'(at the top in the toolbar) button.",
+                  "You will see different types of reports: Simple Summary, Category-wise Summary, and Overall Summary.",
+                  "Review each report as needed."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "export-admin",
+            "title": "Export",
+            "sections": [
+              {
+                "heading": "How to export the results?",
+                "intro": "Follow the video below to know how to export the reports",
+                "imageUrl": "Admin/09_Export.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the audit/client for which you want to export results.",
+                  "Ensure reconciliation is complete and reports are available.",
+                  "Click on the 'Reports' button to view the reports.",
+                  "Locate the 'Export' button (usually at the top int the toolbar).",
+                  "Click the 'Export' button.",
+                  "Wait for the file to download. Check your browser’s downloads folder after the download is complete.",
+                  "Open the exported file to verify the data."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "filter-admin",
+            "title": "Filter",
+            "sections": [
+              {
+                "heading": "How to filter the records",
+                "intro": "Follow the video below to know how to filter the reports",
+                "imageUrl": "Admin/10_Filter.gif",
+                "details": [
+                  "Open the Inventory Records page(See 'Client Records').",
+                  "Select the audit/client you want to filter data for.",
+                  "Ensure reconciliation is complete and reports are available.",
+                  "Look for the Filter icon on the right side of the toolbar (above the data table or report).",
+                  "Click the Filter icon to open filter options.",
+                  "Select the criteria you want to filter by (e.g., item code, batch id, location).",
+                  "Click 'Apply' to filter the data.",
+                  "Review the filtered results. Adjust filters as needed."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "stop-audit-admin",
+            "title": "Stop Audit",
+            "sections": [
+              {
+                "heading": "How to Stop Audit",
+                "intro": "Follow the video below to know how to stop the audit",
+                "imageUrl": "Admin/11_stopAudit.gif",
+                "details": [
+                  "Open the Inventory Records page(See 'Client Records').",
+                  "Select the audit/client you want to stop.",
+                  "Ensure reconciliation is complete and all reports are checked.",
+                  "Click on the 'Stop Audit' button (at the top or in the toolbar).",
+                  "A confirmation dialog will appear. Click 'Yes' to confirm stopping the audit.",
+                  "Wait for the system to process. The audit status will change to 'Stopped'."
+                ]
+              }
             ]
           }
         ]
@@ -55,10 +322,216 @@
         "group": "Audit",
         "pages": [
           {
-            "slug": "audit-inventory",
-            "title": "Audit Inventory",
+            "slug": "clients-page-as",
+            "title": "Client Records",
             "sections": [
-              { "heading": "Step 1", "content": "Open audit tools." }
+              {
+                "heading": "How to view Client Records",
+                "intro": "Follow the video below to learn how to navigate Client Records.",
+                "imageUrl": "AuditSupervisor/01_ClientPage.gif",
+                "details": [
+                  "On the sidebar, click 'Inventory Reconciliation' to expand the menu.",
+                  "Click on 'Inventory Records' in the submenu to view all client records.",
+                  "You will see a table listing all clients, audits, auditors, cycles, entities, audit dates, locations, SPOC names and contacts, statuses, and actions.",
+                  "Use the search bar at the top to find a specific client or record."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "create-new-inventory-as",
+            "title": "Create New Inventory",
+            "sections": [
+              {
+                "heading": "How to create a new Inventory",
+                "intro": "Follow the video below to know how to create a new inventory.",
+                "imageUrl": "AuditSupervisor/02_CreateInventory.gif",
+                "details": [
+                  "Click on the 'New Reconciliation' button in the Inventory Reconciliation menu.",
+                  "A form will appear.",
+                  "Select the client from the 'Client Name' dropdown (if the client name is not available in the drop down , register the name in the CRM website).",
+                  "Enter the audit name in the 'Audit Name' field.",
+                  "Choose the audit cycle (e.g., Q1, Q2, etc.) in the 'Cycle' field.",
+                  "Select the date of the audit in the 'Audit Date' field.",
+                  "Enter the location for the audit in the 'Location' field.",
+                  "Enter the Single Point of Contact's name in the Client SPOC Name' field.",
+                  "Enter the contact number or email(if required) in the 'Client SPOC Contact' field.",
+                  "Click the 'Next' button to upload the Audit Record file.",
+                  "Review all entered information for accuracy.",
+                  "Click the 'Create Audit Record' button to save the new inventory.",
+                  "A confirmation message will appear if the inventory was created successfully."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "inventory-records-as",
+            "title": "Inventory Record Per Client",
+            "sections": [
+              {
+                "heading": "Inventory record per client",
+                "intro": "Refer to the image below to understand how inventory records appear in the system.",
+                "imageUrl": "AuditSupervisor/03_InventoryRecordsPerClient.gif",
+                "details": [
+                  "In the Inventory Records table, find the client whose audit you want to view.",
+                  "Click on the client's audit row.",
+                  "The inventory records for the selected client's audit will be displayed.",
+                  "Review the details and use the available options to navigate or take further actions."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "start-audit-as",
+            "title": "How to Start an Audit",
+            "sections": [
+              {
+                "heading": "How to Start an Audit",
+                "intro": "Follow the video below to know how to create a new inventory.",
+                "imageUrl": "AuditSupervisor/04_startAudit.gif",
+                "details": [
+                  "Open the Inventory Records page from the sidebar.",
+                  "Find the audit you want to start and click on it to open the details.",
+                  "Look for the 'Start Audit' button (usually at the top or in the actions section).",
+                  "Click the 'Start Audit' button.",
+                  "A confirmation message will appear indicating the audit has started."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "add-phystock-as",
+            "title": "How to Add Physical Stock",
+            "sections": [
+              {
+                "heading": "How to Add Physical Stock",
+                "intro": "Follow the video below to know how to add Physical Stock",
+                "imageUrl": "AuditSupervisor/05_addphystock.gif",
+                "details": [
+                  "Ensure the audit is started (see 'How to Start an Audit').",
+                  "In the audit details page, locate the 'Add Physical Stock' button next to the 'Stop Audit' button.",
+                  "Click the 'Add Physical Stock' button.",
+                  "A form will appear. Enter the physical stock details (item code, quantity, location, etc.).",
+                  "Click 'Save and Add Another' if you want to add more items, or just 'Save' if you are done.",
+                  "A confirmation message will appear if the Physical Stock has been added successfully.",
+                  "Repeat the process for each physical stock item.",
+                  "Close the form/tab when you are finished adding all physical stock."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "phy-records-as",
+            "title": "Physical Stock records",
+            "sections": [
+              {
+                "heading": "Physical Stock Records",
+                "intro": "Refer to the image below to navigate to Physical Stock records in the system.",
+                "imageUrl": "AuditSupervisor/06_Phy_records.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the relevant audit/client.",
+                  "Click on the 'Physical Stock' (at the top in the toolbar) tab or button to view all physical stock records.",
+                  "Review the list of physical stock entries for accuracy."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "perform-reconciliation-as",
+            "title": "Perform Reconciliation",
+            "sections": [
+              {
+                "heading": "How to Perform Reconciliation",
+                "intro": "Follow the video below to know how to Perform Reconciliation",
+                "imageUrl": "AuditSupervisor/07_PerformReconciliation.gif",
+                "details": [
+                  "Open the Inventory Records page and select the audit you want to reconcile.",
+                  "Ensure all physical stock entries have been added.",
+                  "Click on the 'Perform Reconciliation' (at the top in the toolbar) button.",
+                  "Wait for the system to process and display the reconciliation results.",
+                  "Review the results for any discrepancies or issues."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "reports-as",
+            "title": "Records",
+            "sections": [
+              {
+                "heading": "How to see the records?",
+                "intro": "Follow the video below to know how to see the reports",
+                "imageUrl": "AuditSupervisor/08_Reports.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the audit/client you want to view reports for.",
+                  "Click on the 'Reports'(at the top in the toolbar) button.",
+                  "You will see different types of reports: Simple Summary, Category-wise Summary, and Overall Summary.",
+                  "Review each report as needed."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "export-as",
+            "title": "Export",
+            "sections": [
+              {
+                "heading": "How to export the results?",
+                "intro": "Follow the video below to know how to export the reports",
+                "imageUrl": "AuditSupervisor/09_Export.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the audit/client for which you want to export results.",
+                  "Ensure reconciliation is complete and reports are available.",
+                  "Click on the 'Reports' button to view the reports.",
+                  "Locate the 'Export' button (usually at the top int the toolbar).",
+                  "Click the 'Export' button.",
+                  "Wait for the file to download. Check your browser’s downloads folder after the download is complete.",
+                  "Open the exported file to verify the data."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "filter-as",
+            "title": "Filter",
+            "sections": [
+              {
+                "heading": "How to filter the records",
+                "intro": "Follow the video below to know how to filter the reports",
+                "imageUrl": "AuditSupervisor/10_Filter.gif",
+                "details": [
+                  "Open the Inventory Records page(See 'Client Records').",
+                  "Select the audit/client you want to filter data for.",
+                  "Ensure reconciliation is complete and reports are available.",
+                  "Look for the Filter icon on the right side of the toolbar (above the data table or report).",
+                  "Click the Filter icon to open filter options.",
+                  "Select the criteria you want to filter by (e.g., item code, batch id, location).",
+                  "Click 'Apply' to filter the data.",
+                  "Review the filtered results. Adjust filters as needed."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "stop-audit-as",
+            "title": "Stop Audit",
+            "sections": [
+              {
+                "heading": "How to Stop Audit",
+                "intro": "Follow the video below to know how to stop the audit",
+                "imageUrl": "AuditSupervisor/11_StopAudit.gif",
+                "details": [
+                  "Open the Inventory Records page(See 'Client Records').",
+                  "Select the audit/client you want to stop.",
+                  "Ensure reconciliation is complete and all reports are checked.",
+                  "Click on the 'Stop Audit' button (at the top or in the toolbar).",
+                  "A confirmation dialog will appear. Click 'Yes' to confirm stopping the audit.",
+                  "Wait for the system to process. The audit status will change to 'Stopped'."
+                ]
+              }
             ]
           }
         ]
@@ -69,10 +542,135 @@
         "group": "User Tasks",
         "pages": [
           {
-            "slug": "update-stock",
-            "title": "Update Stock",
+            "slug": "clients-table-user",
+            "title": "Client Records",
             "sections": [
-              { "heading": "Step 1", "content": "Open stock page." }
+              {
+                "heading": "How to view Client Records",
+                "intro": "Follow the video below to learn how to navigate Client Records.",
+                "imageUrl": "User/01_ClientPage.gif",
+                "details": [
+                  "On the sidebar, click 'Inventory Reconciliation' to expand the menu.",
+                  "Click on 'Inventory Records' in the submenu to view all client records.",
+                  "You will see a table listing all clients, audits, auditors, cycles, entities, audit dates, locations, SPOC names and contacts, statuses, and actions.",
+                  "Use the search bar at the top of the table to find a specific client or record."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "inventory-records-user",
+            "title": "Inventory Record Per Client",
+            "sections": [
+              {
+                "heading": "Inventory record per client",
+                "intro": "Refer to the image below to understand how inventory records appear in the system.",
+                "imageUrl": "User/02_InventoryRecordsPerClient.gif",
+                "details": [
+                  "In the Inventory Records table, find the client whose audit you want to view.",
+                  "Click on the client's audit row.",
+                  "The inventory records for the selected client's audit will be displayed.",
+                  "Review the details and use the available options to navigate or take further actions."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "add-phystock-user",
+            "title": "How to Add Physical Stock",
+            "sections": [
+              {
+                "heading": "How to Add Physical Stock",
+                "intro": "Follow the video below to know how to add Physical Stock",
+                "imageUrl": "User/03_AddPhysicalStock.gif",
+                "details": [
+                  "Ensure the audit is started (see 'How to Start an Audit').",
+                  "In the audit details page, locate the 'Add Physical Stock' button next to the 'Stop Audit' button.",
+                  "Click the 'Add Physical Stock' button.",
+                  "A form will appear. Enter the physical stock details (item code, quantity, location, etc.).",
+                  "Click 'Save and Add Another' if you want to add more items, or just 'Save' if you are done.",
+                  "A confirmation message will appear if the Physical Stock has been added successfully.",
+                  "Repeat the process for each physical stock item.",
+                  "Close the form/tab when you are finished adding all physical stock."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "phy-records-user",
+            "title": "Physical Stock records",
+            "sections": [
+              {
+                "heading": "Physical Stock Records",
+                "intro": "Refer to the image below to navigate to Physical Stock records in the system.",
+                "imageUrl": "User/04_PhyRecords.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the relevant audit/client.",
+                  "Click on the 'Physical Stock' (at the top in the toolbar) tab or button to view all physical stock records.",
+                  "Review the list of physical stock entries for accuracy."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "export-user",
+            "title": "Export",
+            "sections": [
+              {
+                "heading": "How to export the results?",
+                "intro": "Follow the video below to know how to export the reports",
+                "imageUrl": "User/05_Export.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the audit/client for which you want to export results.",
+                  "Ensure reconciliation is complete and reports are available.",
+                  "Click on the 'Reports' button to view the reports.",
+                  "Locate the 'Export' button (usually at the top int the toolbar).",
+                  "Click the 'Export' button.",
+                  "Wait for the file to download. Check your browser’s downloads folder after the download is complete.",
+                  "Open the exported file to verify the data."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "filter-user",
+            "title": "Filter",
+            "sections": [
+              {
+                "heading": "How to filter the records",
+                "intro": "Follow the video below to know how to filter the reports",
+                "imageUrl": "User/06_Filter.gif",
+                "details": [
+                  "Open the Inventory Records page(See 'Client Records').",
+                  "Select the audit/client you want to filter data for.",
+                  "Ensure reconciliation is complete and reports are available.",
+                  "Look for the Filter icon on the right side of the toolbar (above the data table or report).",
+                  "Click the Filter icon to open filter options.",
+                  "Select the criteria you want to filter by (e.g., item code, batch id, location).",
+                  "Click 'Apply' to filter the data.",
+                  "Review the filtered results. Adjust filters as needed."
+                ]
+              }
+            ]
+          },
+          {
+            "slug": "reports-user",
+            "title": "Records",
+            "sections": [
+              {
+                "heading": "How to see the records?",
+                "intro": "Follow the video below to know how to see the reports",
+                "imageUrl": "User/07_Reports.gif",
+                "details": [
+                  "Open the Inventory Records page.",
+                  "Select the audit/client you want to view reports for.",
+                  "Click on the 'Reports'(at the top in the toolbar) button.",
+                  "You will see different types of reports: Simple Summary, Category-wise Summary, and Overall Summary.",
+                  "Review each report as needed."
+                ]
+              }
             ]
           }
         ]
